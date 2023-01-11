@@ -1,0 +1,61 @@
+\documentclass[10pt]{article}
+\usepackage{amsfonts,amssymb,amsthm,amsmath,enumerate,verbatim,mathtools,tikz,bm,mathrsfs,tikz-cd,hyperref}
+\pagestyle{empty} 
+\setlength{\topmargin}{-.4in} 
+\setlength{\textheight}{9.5in} 
+\setlength{\textwidth}{7in} 
+\setlength{\oddsidemargin}{-.2in} 
+\setlength{\evensidemargin}{-.2in}
+\newenvironment{topic}[1]{\begin{trivlist}\item[]{\bf #1:}}{\end{trivlist}}
+
+%%%%new commands
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\e}{\varepsilon}
+
+\begin{document}
+
+\begin{center}
+\textbf{Math 3210 Section 002: Foundations of Analysis I}\\ 
+Spring 2023\\
+Homework 1: Due Friday, January 20th 
+\end{center}
+
+\noindent\textbf{Directions:} Complete the problems below. Please be sure to type your assignment or have them \textbf{extremely neatly handwritten}; points will be deducted otherwise. This can be submitted in pairs or individually; see Canvas for submission instructions to Gradescope. You may consult myself, your notes/texts, any number of students from this course, and tutors at the Rushing Math Center; \textbf{please resist the temptation to look up answers on the internet as you are depriving yourself of a valuable learning experience}. 
+\begin{enumerate}
+
+\item (8 points) Let $a$ and $b$ be real numbers with $a<b$. Justify your answer to each part completely. 
+\begin{enumerate}
+\item What is the union of all closed intervals contained within the open interval $(a,b)$? 
+\item What is the intersection of all open intervals containing the closed interval $[a,b]$? 
+\end{enumerate}
+
+\item (8 points) Which of the following functions from the real numbers to the real numbers are one-to-one? Which ones are onto? \textbf{No justification is needed for this problem.}
+\begin{enumerate}
+\item $f(x) = x^2$  
+\item $g(x) = x^3$ 
+\item $h(x) = x^3+x^2$
+\item $i(x) = e^x$
+\end{enumerate}
+
+\item (5 points) Let $f\colon A \to B$ be a one-to-one function and $C,D\subseteq A$. Prove that $f(C\cap D) = f(C)\cap f(D)$.
+
+\item (6 points)  Use induction to prove the following statements for each $n\in \N$: 
+\begin{enumerate}
+ \item $1+2+\ldots +2^n=2^{n+1}-1$
+ \item $8^n-3^n$ is divisible by 5.
+\end{enumerate}
+
+\item (8 points) Let $x$ and $y$ be elements of an ordered field. Assume that $0<x<y$ and prove the following statements. State which axioms you use explicitly. 
+\begin{enumerate}
+\item $y^{-1} < x^{-1}$
+\item $xy>0$. 
+\end{enumerate}
+
+\item (5 points) Assume that $x$ and $y$ are elements of a field. Show that if $xy=0$ then either $x=0$ or $y=0$. 
+\end{enumerate}
+
+\end{document}
