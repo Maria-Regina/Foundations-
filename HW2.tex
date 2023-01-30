@@ -1,0 +1,66 @@
+\documentclass[10pt]{article}
+\usepackage{amsfonts,amssymb,amsthm,amsmath,enumerate,verbatim,mathtools,tikz,bm,mathrsfs,tikz-cd,hyperref}
+\pagestyle{empty} 
+\setlength{\topmargin}{-.4in} 
+\setlength{\textheight}{9.5in} 
+\setlength{\textwidth}{7in} 
+\setlength{\oddsidemargin}{-.2in} 
+\setlength{\evensidemargin}{-.2in}
+\newenvironment{topic}[1]{\begin{trivlist}\item[]{\bf #1:}}{\end{trivlist}}
+
+%%%%new commands
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\e}{\varepsilon}
+
+\begin{document}
+
+\begin{center}
+\textbf{Math 3210 Section 002: Foundations of Analysis I}\\ 
+Spring 2023\\
+Homework 2: Due Friday, February 3rd 
+\end{center}
+
+\noindent\textbf{Directions:} Complete the problems below. Please be sure to type your assignment or have them \textbf{extremely neatly handwritten}; points will be deducted otherwise. This can be submitted in pairs or individually; see Canvas for submission instructions to Gradescope. You may consult myself, your notes/texts, any number of students from this course, and tutors at the Rushing Math Center; \textbf{please resist the temptation to look up answers on the internet as you are depriving yourself of a valuable learning experience}. 
+\begin{enumerate}
+
+\item For each of the following sets determine the set of all upper bounds and each set's least upper bound in $\R$. \textbf{No justification is needed}. 
+\begin{enumerate}
+\item \textbf{(2 points)} $\{a-1/n: n\in \N\}$ where  $a\in \R$ is fixed
+\item \textbf{(2 points)} $\{x\in \Q: x^3<8\}$
+\end{enumerate}
+
+\item For each of the following sets determine if the statement is true or false. Give a short proof or counterexample if you claim the statement is true or false, respectively. \begin{enumerate}
+\item \textbf{(3 points)} If $x\in \R$, then there exists $n\in \N$ such that $n^3>x$. 
+\item \textbf{(3 points)} If $A$ and $B$ are nonempty subsets of $\R$ where $\inf B\leq \inf A\leq \sup A\leq \sup B$, then $A\subseteq B$. 
+\end{enumerate}
+
+\item
+\begin{enumerate}
+\item \textbf{(4 points)} Suppose that $q\in \Q$ and $r\in \R\backslash \Q$. Determine whether $q+r$ and $qr$ are elements of $\Q$ or $\R\backslash \Q$, respectively. Justify your answer completely. 
+\item \textbf{(4 points)} Use part (a) to prove that for any $x<y$ in $\R$ there exists $r\in \R\backslash \Q$ such that $x<r<y$. 
+\end{enumerate}
+
+\item Let $A$ and $B$ be nonempty subsets of $\R$. Prove the following:
+\begin{enumerate}
+\item \textbf{(4 points)} $\sup (A-B)=\sup A-\inf B$ where recall that $A-B=\{a-b: a\in A,b\in B\}$. 
+\item \textbf{(4 points)} If $A\subseteq B$, then $\inf B\leq \inf A\leq \sup A\leq \sup B$. 
+\end{enumerate}
+
+\item Find the sup and inf of the following sets. Justify your answer completely. 
+\begin{enumerate}
+\item \textbf{(3 points)} $(-1,6]$
+\item \textbf{(3 points)} $\displaystyle \left\{\frac{n+2}{n^2+1}: n\in \N\right\}$
+\end{enumerate}
+
+\item \begin{enumerate}
+\item \textbf{(4 points)} Let $A\subseteq \R$ such that $\sup A\in \R$. Prove that there exists a sequence $\{a_n\}$ such that $a_n\in A$ and $\sup A-\frac{1}{n}< a_n\leq \sup A$ for every $n\in \N$. 
+
+\item \textbf{(4 points)} Does the sequence $\{a_n\}$ converge, where $a_n:=\sqrt{n+1}-\sqrt{n}$ for each $n\in \N$? If so, find $\lim a_n$ and prove your claim is correct? If not, justify why the sequence diverges. 
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
